@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+  /* header */
+
+  .container-fluid{
+    background-color: rgb(233, 233, 233);
+    
+    .row{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .logo{
+           
+            img{
+                height: 25%;
+                width: 25%;
+            }
+        }
+    
+        .navbar{
+            
+            ul{
+                display: flex;
+                gap: 25px;
+                li{
+    
+                    list-style: none;
+                }
+                a{
+                    text-decoration: none;
+                    color: rgb(77, 75, 75);
+                }
+            }
+        }
+    }
+  }
+
+/* section produits */
+
+.section-produit{
+    .container-fluid{
+
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        h1{
+            text-align: center;
+            font-weight: 700;
+            text-decoration: underline;
+            padding-bottom: 50px;
+        }
+
+        .row{
+
+            gap: 30px;
+
+            .produits{
+                height: 420px;
+                width: 240px;
+                background-color: rgba(248, 247, 245, 0.664);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                padding-bottom: 15px;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);
+                transition: 0.5s;
+                
+                h3{
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding-left: 15px;
+                }
+
+                h6{
+                font-size: 12px; 
+                color: rgb(150, 147, 147);
+                padding-left: 15px;
+                }
+
+                button{
+                    font-size: 12px;
+                    align-self: center;
+                }
+
+                .produits1{
+                    background-image: url(assets/images/1.png);
+                }
+
+                .image{
+                    height: 380px;
+                    border-radius: 20px 20px 0 0;
+                    background-size: cover;
+                    transition: 0.5s;
+
+                }
+
+                .image1{
+                    background-image: url(assets/images/1.png);
+                }
+
+                .image2{
+                    background-image: url(assets/images/2.png);
+                }
+
+                .image3{
+                    background-image: url(assets/images/3.png);
+                }
+
+                .image4{
+                    background-image: url(assets/images/4.png);
+                }
+            }
+            .produits:hover{
+                height: 425px;
+                width: 245px;
+                background-color: #06060622;
+            }
+        }
+    }
+}
+
+
+/* footer */
+
+footer{
+
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h5{
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+
+    .contacts{
+        padding-bottom: 10px;
+        
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 75px;
+        }
+
+        li{
+            color: white;
+            list-style: none;
+        }
+    }
+
+    h6{
+        font-size: 12px;
+        font-weight: 400;
+        color: rgb(158, 109, 2);
+    }
+
+}
